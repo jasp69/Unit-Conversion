@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Unit Conversion</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <section id="home">
+            <header><b>Unit Conversion</b></header>
+            <nav>
+            <div class="topdiv">
+                <a href="#temperature"><button class="topmenu">Temperature</button></a>
+                <a href="#weight"><button class="topmenu">Weight</button></a>
+                <a href="#distance"><button class="topmenu">Distance</button></a>
+            </div>
+            </nav>
+        </section>
+        <div style="clear:both;"></div>
+        <div id="'all-conversion-sections">
+            <section id="temperature" class="b temperature">
+                <div id="tmp">
+                    <figure>
+                        <img src="img/temperature.webp" width="200px"/>
+                        <figcaption>Celsius to Fahrenheit conversion</figcaption>
+                    </figure>
+
+                    <article>
+                        <fieldset>
+                            <legend>Temperature</legend>
+                            <label for="Temperature">Celsius</label><br/>
+                            <input type="number" id="c"><br/>
+                            <button id="temperature" onclick="temperature()">Convert</button><br/>
+                            <input type="number" id="f"><br/>
+                            <label for="Temperature">Fahrenheit</label>
+                        </fieldset>
+                    
+                        <aside>
+                            Use this to convert Celsius to Fahrenheit.
+                        </aside>
+                    </article>
+                </div>
+            </section>
+            <div style="clear:both;"></div>
+            <section id="weight" class="b weight">
+                <div id="wgt">
+                    <figure>
+                        <img src="img/weight.png" width="200px"/>
+                        <figcaption>Kilograms to Pound conversion</figcaption>
+                    </figure>
+                    <article>
+                        <fieldset>
+                            <legend>Weight</legend>
+                            <label for="Weight">Kilograms</label><br/>
+                            <input type="number" id="kg"><br/>
+                            <button id="weight" onclick="weight()">Convert</button><br/>
+                            <input type="number" id="lbs"><br/>
+                            <label for="Weight">Pounds</label><br/>
+                        </fieldset>
+                        <aside>
+                            Use this to convert kilograms to pounds.
+                        </aside>
+                    </article>
+                </div>
+            </section>
+            <div style="clear:both";></div>
+            <section id="distance" class="b distance">
+                <div id="dst">
+                    <figure>
+                        <img src="img/distance.png" width="200px"/>
+                        <figcaption>Kilometer to Mile conversion</figcaption>
+                    </figure>
+                    <article>
+                        <fieldset>
+                            <legend>Distance</legend>
+                            <label for="Distance">Kilometers</label><br/>
+                            <input type="number" id="km"><br/>
+                            <button id="distance" onclick="distance()">Convert</button>
+                            <input type="number" id="m"><br/>
+                            <label for="Distance">Miles</label>
+                        </fieldset>
+                        <aside>
+                            Use this to convert kilometers to miles.
+                        </aside>
+                    </article>   
+                </div>
+            </section>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div id="go-home" class="iconbutton">
+            <a href="#home">
+                <img src="img/home.jpg" width="50px"/>
+            </a>
+        </div>
+
+        <footer>This is a sample project to understand HTML.</footer>
+
+    </body>
+</html>
